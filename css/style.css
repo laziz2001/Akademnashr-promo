@@ -9,10 +9,19 @@ body {
 /* Header */
 .site-header {
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav-right {
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
     list-style: none;
+    display: flex;
 }
 
 .nav-link {
@@ -34,7 +43,9 @@ body {
 /* Hero */
 
 .hero {
-    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color:#252420;
     color: white;
 }
@@ -54,6 +65,12 @@ body {
     line-height: 1.2;
     font-family: "Roboto Condensed", "Arial" sans-serif;
     text-align: left;
+}
+
+.features-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 }
 
 .hero-text {
@@ -96,6 +113,9 @@ body {
 .promo {
     background: #252420;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .promo-content {
@@ -124,6 +144,17 @@ body {
     background: #f8f8f8;
 }
 
+.site-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer-socials {
+    display: flex;
+
+}
+
 .site-footer ul{
     list-style: none;
 }
@@ -131,6 +162,10 @@ body {
 .site-footer-divider {
     background-color: rgba(37, 36, 32, 0.50);
     height: 2px;
+}
+
+.site-footer-bottom {
+    display: flex;
 }
 
 .site-footer-links {
