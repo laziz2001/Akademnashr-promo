@@ -13,10 +13,13 @@ body {
 
 /* Header */
 .site-header {
-    background-color: white;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 5px solid #ff7500;
+    background-color: white;
 }
 
 .logo-link:hover {
@@ -30,11 +33,13 @@ body {
 .site-nav-right {
     display: flex;
     align-items: center;
+
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
 .nav-link {
@@ -55,11 +60,15 @@ body {
 }
 
 .btn {
-    background-color: #ff7500;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
     font-size: 13px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff7500;
+    text-decoration: none;
+    transition: opacity 0.4s ease;
 }
 
 .btn:hover {
@@ -76,6 +85,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color:#252420;
     color: white;
 }
@@ -84,6 +95,7 @@ body {
     width: 80px;
     height: 3px;
     background-color: #ff7500;
+    border: 0;
 }
 
 .hero-content {
@@ -97,11 +109,6 @@ body {
     text-align: left;
 }
 
-.features-list {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
 
 .hero-text {
     text-align: left;
@@ -111,9 +118,15 @@ body {
 .hero-img {
     width: 510px;
     height: 510px;
+    border-radius: 8px;
 }
 
 /* Features */
+
+.features {
+    padding-top: 210px;
+    padding-bottom: 210px;
+}
 
 .features-heading {
     font-size: 72px;
@@ -126,9 +139,20 @@ body {
     width: 340px;
 }
 
+.features-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
 .feature-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
     background: rgba(255, 117, 0, 0.20);
 }
 
@@ -146,6 +170,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 12px;
 }
 
 .promo-content {
@@ -166,12 +191,15 @@ body {
     width: 440px;
     height: 440px;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 /* Footer */
 
 .site-footer {
     background: #f8f8f8;
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 
 .site-footer-top {
@@ -182,6 +210,7 @@ body {
 
 .site-footer-socials {
     display: flex;
+    padding: 0;
 }
 
 .site-footer-socials a{
@@ -204,6 +233,7 @@ body {
 .site-footer-divider {
     background-color: rgba(37, 36, 32, 0.50);
     height: 2px;
+    border: 0;
 }
 
 .site-footer-bottom {
@@ -212,6 +242,7 @@ body {
 
 .site-footer-links {
     width: 224px;
+    padding: 0;
 }
 
 .site-footer-links a {
