@@ -6,6 +6,11 @@ body {
     font-size: 16px;
 }
 
+*:focus {
+    outline: 2px dotted #ff7500;
+    outline-offset: 3px;
+}
+
 /* Header */
 .site-header {
     background-color: white;
