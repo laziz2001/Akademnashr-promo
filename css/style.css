@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Body */
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', "Arial", sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.5;
@@ -11,15 +17,27 @@ body {
     outline-offset: 3px;
 }
 
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* Header */
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
     border-top: 5px solid #ff7500;
     background-color: white;
+}
+
+.site-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-link:hover {
@@ -100,13 +118,16 @@ body {
 /* Hero */
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding-top: 80px;
     padding-bottom: 80px;
     background-color:#252420;
     color: white;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-line {
@@ -141,6 +162,7 @@ body {
     width: 510px;
     height: 510px;
     border-radius: 8px;
+    box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.6);
 }
 
 /* Features */
@@ -181,6 +203,8 @@ body {
     align-items: center;
     width: 100px;
     height: 100px;
+    margin-top: 0;
+    margin-bottom: 32px;
     border-radius: 50%;
     background: rgba(255, 117, 0, 0.20);
 }
@@ -188,18 +212,30 @@ body {
 .features-title {
     font-size: 24px;
     line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 12px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.features-info {
+    margin: 0;
 }
 
 /* Promo */
 
 .promo {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.promo-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+    border-radius: 12px;
     background: #252420;
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 12px;
 }
 
 .promo-content {
@@ -232,6 +268,7 @@ body {
 }
 
 .promo-img {
+    display: block;
     width: 440px;
     height: 440px;
     object-fit: cover;
@@ -309,6 +346,14 @@ body {
     padding: 0;
     margin: 0;
     margin-right: 64px;
+}
+
+.site-footer-links li {
+    padding-bottom: 16px;
+}
+
+.site-footer-links li:last-child {
+    margin-bottom: 0;
 }
 
 .site-footer-links:last-child {
