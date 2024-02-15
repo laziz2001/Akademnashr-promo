@@ -124,7 +124,7 @@ body {
     color: white;
     background-color: var(--accent-color);
     text-decoration: none;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.2s ease;
 }
 
 .btn:hover {
@@ -145,6 +145,7 @@ body {
 }
 
 .hero-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,6 +180,9 @@ body {
 }
 
 .hero-img {
+    position: absolute;
+    top: -40px;
+    right: 10px;
     width: 510px;
     height: 510px;
     border-radius: 8px;
@@ -249,6 +253,7 @@ body {
 }
 
 .promo-inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -288,9 +293,12 @@ body {
 }
 
 .promo-img {
+    position: absolute;
     display: block;
     width: 440px;
     height: 440px;
+    top: -15%;
+    right: 5%;
     object-fit: cover;
     border-radius: 12px;
 }
